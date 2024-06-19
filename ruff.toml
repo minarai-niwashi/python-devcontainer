@@ -13,3 +13,5 @@ select = [
     # isort
     "I",
 ]
+[format]
+docstring-code-format = true
