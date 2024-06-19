@@ -24,9 +24,7 @@
           ],
           "testing.unittestEnabled": false,
           "testing.pytestEnabled": true
-        },
-        "ruff.nativeServer": true,
-        "ruff.configuration": "${containerWorkspaceFolder}/ruff.toml"
+        }
       },
       "extensions": [
         "ms-python.python",
