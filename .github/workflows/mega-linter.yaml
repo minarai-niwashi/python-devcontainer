@@ -72,10 +72,7 @@ jobs:
           #     contains(fromJSON('["refs/heads/main", "refs/heads/master"]'), github.ref)
           #   }}
           VALIDATE_ALL_CODEBASE: >-
-            ${{
-              github.event_name == 'push' &&
-              contains(fromJSON('["refs/heads/main", "refs/heads/master"]'), github.ref)
-            }}
+            ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
