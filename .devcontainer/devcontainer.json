@@ -1,9 +1,6 @@
 {
   "name": "${localWorkspaceFolderBasename}",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": ".."
-  },
+  "image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye",
   "customizations": {
     "vscode": {
       "settings": {
@@ -37,5 +34,6 @@
         "Gruntfuggly.todo-tree"
       ]
     }
-  }
+  },
+  "postCreateCommand": "python3 -m pip --no-cache-dir install -r requirements.txt"
 }
