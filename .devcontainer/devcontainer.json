@@ -1,9 +1,6 @@
 {
   "name": "${localWorkspaceFolderBasename}",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": ".."
-  },
+  "image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye",
   "customizations": {
     "vscode": {
       "settings": {
@@ -19,9 +16,7 @@
             "source.fixAll": "explicit",
             "source.organizeImports": "explicit"
           },
-          "testing.pytestArgs": [
-            "src"
-          ],
+          "testing.pytestArgs": ["src"],
           "testing.unittestEnabled": false,
           "testing.pytestEnabled": true
         },
@@ -34,8 +29,10 @@
         "ms-toolsai.jupyter",
         "njpwerner.autodocstring",
         "shardulm94.trailing-spaces",
-        "Gruntfuggly.todo-tree"
+        "Gruntfuggly.todo-tree",
+        "esbenp.prettier-vscode"
       ]
     }
-  }
+  },
+  "postCreateCommand": "python3 -m pip --no-cache-dir install -r requirements.txt"
 }
