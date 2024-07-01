@@ -16,9 +16,7 @@
             "source.fixAll": "explicit",
             "source.organizeImports": "explicit"
           },
-          "testing.pytestArgs": [
-            "src"
-          ],
+          "testing.pytestArgs": ["src"],
           "testing.unittestEnabled": false,
           "testing.pytestEnabled": true
         },
