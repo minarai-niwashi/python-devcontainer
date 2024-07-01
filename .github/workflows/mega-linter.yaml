@@ -35,7 +35,6 @@ jobs:
       pull-requests: write
 
     steps:
-
       # Git Checkout
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -58,7 +57,6 @@ jobs:
         # All available variables are described in documentation
         # https://megalinter.io/latest/configuration/
         env:
-
           # Validates all source when push on main, else just the git diff with
           # main. Override with true if you always want to lint all sources
           #
