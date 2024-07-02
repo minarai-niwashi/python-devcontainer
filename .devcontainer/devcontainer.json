@@ -30,6 +30,7 @@
         "njpwerner.autodocstring",
         "shardulm94.trailing-spaces",
         "Gruntfuggly.todo-tree",
+        "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode"
       ]
     }
