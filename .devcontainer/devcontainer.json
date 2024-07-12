@@ -35,5 +35,5 @@
       ]
     }
   },
-  "postCreateCommand": "python3 -m pip --no-cache-dir install -r requirements.txt && pre-commit install"
+  "postCreateCommand": "python3 -m pip --no-cache-dir install .[dev] && pre-commit install"
 }
