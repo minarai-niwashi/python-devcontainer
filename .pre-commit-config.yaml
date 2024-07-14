@@ -12,4 +12,4 @@ repos:
     hooks:
       # Run the linter.
       - id: ruff
-        args: [--config, .ruff.toml]
+        args: [--config, pyproject.toml]
