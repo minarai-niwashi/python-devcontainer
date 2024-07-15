@@ -16,8 +16,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  pytest:
-    name: TestPython
+  test-python:
+    name: Test Python
     runs-on: ubuntu-latest
 
     steps:
