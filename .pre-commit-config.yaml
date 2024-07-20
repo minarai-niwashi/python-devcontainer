@@ -13,3 +13,8 @@ repos:
       # Run the linter.
       - id: ruff
         args: [--config, pyproject.toml]
+
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.7.1
+    hooks:
+      - id: nbstripout
