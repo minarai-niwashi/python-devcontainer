@@ -1,4 +1,0 @@
-{
-  "dotfiles.repository": "https://github.com/minarai-niwashi/dotfiles.git",
-  "dotfiles.installCommand": "install.sh"
-}
