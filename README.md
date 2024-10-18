@@ -1,2 +1,2 @@
 # python-devcontainer
-devcontainerを使ったPython開発環境
+devcontainerを使ったPython環境
