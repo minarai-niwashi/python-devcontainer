@@ -20,6 +20,7 @@
         "python.testing.pytestArgs": ["src"],
         "python.testing.unittestEnabled": false,
         "python.testing.pytestEnabled": true,
+        "python.analysis.inlayHints.callArgumentNames": "partial",
         "ruff.configuration": "${containerWorkspaceFolder}/pyproject.toml",
         "dotfiles.repository": "https://github.com/minarai-niwashi/dotfiles.git",
         "dotfiles.installCommand": "install.sh"
