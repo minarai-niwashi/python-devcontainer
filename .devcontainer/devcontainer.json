@@ -1,6 +1,9 @@
 {
   "name": "${localWorkspaceFolderBasename}",
   "image": "mcr.microsoft.com/devcontainers/python:3.12-bullseye",
+  "containerEnv": {
+    "UV_CACHE_DIR": "${containerWorkspaceFolder}/.cache/uv"
+  },
   "customizations": {
     "vscode": {
       "settings": {
@@ -39,5 +42,5 @@
       ]
     }
   },
-  "postCreateCommand": "python3 -m pip --no-cache-dir install .[dev] && pre-commit install"
+  "postCreateCommand": "curl -LsSf https://astral.sh/uv/0.6.2/install.sh | sh && uv sync --frozen --dev"
 }
