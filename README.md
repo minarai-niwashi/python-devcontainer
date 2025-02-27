@@ -1,5 +1,6 @@
 # python-devcontainer
-devcontainerを使ったPython環境
+
+This repository provides a development environment where you can run Python scripts inside a devcontainer.
 
 ## Environment
 
